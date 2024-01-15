@@ -36,10 +36,10 @@ review_detail_clear = df_pd['review_detail'].apply(wt)
 dct = Dictionary(review_detail_clear)
 
 
-tokens_in_dataset = 1000
+tokens_in_dataset = 5000
 document_max_len = 400
 batch_size = 32
-embedding_dim = 50
+embedding_dim = 64
 
 # w ponizszym kroku kodujemy tokeny za pomoca slownika, a nastepnie
 # liczymy hashe (w uproszczony sposob), by ograniczyc wielkosc slownika do
@@ -65,8 +65,9 @@ model.add(Embedding(input_dim=tokens_in_dataset, # liczba unikalnych tokenów
                     output_dim=embedding_dim, # wielkość embeddingu
                     input_length=document_max_len, # długość sekwencji
                     ))
-model.add(LSTM(units=32, activation='tanh', return_sequences=False))
-model.add(Dense(units=32, activation='relu'))
+model.add(LSTM(units=32, activation='tanh', return_sequences=True))
+model.add(LSTM(units=16, activation='tanh', return_sequences=False))
+model.add(Dense(units=16, activation='relu'))
 model.add(Dense(units=1, activation='sigmoid'))
 
 model.compile(loss='binary_crossentropy',
@@ -89,3 +90,5 @@ AUC = {
        'test': roc_auc_score(y_test,prob_pred_test),
        }
 
+print(AUC)
+s
