@@ -36,7 +36,7 @@ Dysk 100 GB (10 GB nie starcza na Tensorflow)
 
 m4.large (myślę o innej maszynie)
 
-Łączenie po SSH, edytor: Jupyter Notebook, plik **Mariusz/lstm_AWS.ipynb**
+Łączenie po SSH, edytor: Jupyter Notebook, plik **Mariusz/lstm_AWS.ipynb**, dane z bucketu S3
 
 Środowisko:
 
