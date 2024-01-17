@@ -2,6 +2,13 @@
 
 ## Mariusz - notatki 
 
+### 1. Preprocessing
+
+Ustawienia w punkcie 4: 2 workerów, G 1X (pracuje tylko 1 worker i nie da się zrównoleglić tego zadania, więc nie opłaca się zwiększać). Robimy tylko na part-01.json (problemy z innymi partycjami). Powinno się zrobić w 6 min.
+
+Punkt 5: pamiętać o zrobieniu bucketu do wyników Atheny.
+
+### Dodatkowe analizy
 **Mariusz/lstm_clean.py** - model LSTM do wykrywania spoilerów, który testowałem u siebie lokalnie
 
 Środowisko lokalne:
