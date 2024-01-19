@@ -4,7 +4,7 @@
 
 ### 1. Preprocessing
 
-Ustawienia w punkcie 4: 2 workerów, G 1X (pracuje tylko 1 worker i nie da się zrównoleglić tego zadania, więc nie opłaca się zwiększać). Robimy tylko na part-01.json (problemy z innymi partycjami). Powinno się zrobić w 6 min.
+Ustawienia w punkcie 4: 8 workerów, G 2X, automatyczne dostosowanie liczby workerów. Robimy na całości. Powinno się zrobić w 3,5 godz.
 
 Punkt 5: pamiętać o zrobieniu bucketu do wyników Atheny.
 
