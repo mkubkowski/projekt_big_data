@@ -41,7 +41,7 @@ Ubuntu 22.0.4
 
 Dysk 100 GB (10 GB nie starcza na Tensorflow)
 
-m4.large (myślę o innej maszynie)
+r7i.large
 
 Łączenie po SSH, edytor: Jupyter Notebook, plik **Mariusz/lstm_AWS.ipynb**, dane z bucketu S3
 
