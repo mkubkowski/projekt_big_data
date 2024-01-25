@@ -68,3 +68,5 @@ boto3 1.34.19
 notebook 7.0.6
 
 jupyter-server 2.12.5
+
+seaborn 0.13.2
